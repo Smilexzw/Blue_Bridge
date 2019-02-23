@@ -17,6 +17,8 @@ public class Four_TheEndOfWorld {
     public static void main(String[] args) {
         Calendar calendar = Calendar.getInstance();
         for (int i = 1999; ; i += 100) {
+
+            // 注意的几个点， Calendar 中月份从0 开始， 西方中星期天为第一天
             calendar.set(i, 11, 31);
             System.out.println(calendar.get(Calendar.DAY_OF_WEEK));
             if (calendar.get(Calendar.DAY_OF_WEEK) == 1) {
