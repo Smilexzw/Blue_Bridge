@@ -39,7 +39,7 @@ package competition;
    则排序后为：
    -3,-2,-16,-5,0,0,0,21,19,33,25,16,18,25
  */
-public class Four_ThreeSort {
+public class _2013_06三部排序 {
     public static void main(String[] args) {
         // -3,-2,-16,-5,0,0,0,21,19,33,25,16,18,25
         int[] x = {25, 18, -2, 0, 16, -5, 33, 21, 0, 19, -16, 25, -3, 0};
