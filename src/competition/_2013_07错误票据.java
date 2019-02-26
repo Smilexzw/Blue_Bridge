@@ -1,6 +1,8 @@
 package competition;
 
 import java.io.BufferedInputStream;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -57,43 +59,69 @@ CPU消耗  < 2000ms
 
   8.
  */
-public class Four_ErrorTicket {
+public class _2013_07错误票据 {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(new BufferedInputStream(System.in));
+//        int N = sc.nextInt();
+//        int[] arr = new int[10000];
+//        int k = 0;
+//        for (int i = 0; i < N; i++) {
+//            while (sc.hasNext()) {
+//                arr[k++] = sc.nextInt();
+//            }
+//        }
+//        Integer min = Integer.MAX_VALUE;
+//        Integer max = Integer.MIN_VALUE;
+//        for (int i = 0; i < k; i++) {
+//            min = Math.min(min, arr[i]);
+//            max = Math.max(max, arr[i]);
+//        }
+//        int m = 0;
+//        int n = 0;
+//        boolean[] bol = new boolean[max + 1];
+//        int index = 0;
+//        while (index <= k) {
+//            if (bol[arr[index]] == false) {
+//                bol[arr[index++]] = true;
+//            } else {
+//                n = arr[index++];
+//            }
+//        }
+//        for (int i = min; i < bol.length; i++) {
+//            if (bol[i] == false) {
+//                m = i;
+//                break;
+//            }
+//        }
+//        System.out.println(m + " " + n);
+//
+//        // 在C语言网（dotcpp）上通过 内存215528, 耗时256
+//    }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(new BufferedInputStream(System.in));
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> list = new ArrayList<Integer>();
         int N = sc.nextInt();
-        int[] arr = new int[10000];
-        int k = 0;
+        sc.nextLine();    // 吃掉整数后面的换行符号
         for (int i = 0; i < N; i++) {
-            while (sc.hasNext()) {
-                arr[k++] = sc.nextInt();
+            String line = sc.nextLine();
+            String[] split = line.split(" ");
+            for (int j = 0; j < split.length; j++) {
+                list.add(Integer.parseInt(split[j]));
             }
         }
-        Integer min = Integer.MAX_VALUE;
-        Integer max = Integer.MIN_VALUE;
-        for (int i = 0; i < k; i++) {
-            min = Math.min(min, arr[i]);
-            max = Math.max(max, arr[i]);
-        }
-        int m = 0;
-        int n = 0;
-        boolean[] bol = new boolean[max + 1];
-        int index = 0;
-        while (index <= k) {
-            if (bol[arr[index]] == false) {
-                bol[arr[index++]] = true;
-            } else {
-                n = arr[index++];
+        Collections.sort(list);
+        int a = 0;
+        int b = 0;
+        for (int i = 1; i < list.size(); i++) {
+            if (list.get(i) - list.get(i - 1) == 2) {
+                // 例如 8 - 6 == 2 则 a = 7
+                a = list.get(i) - 1;
+            }
+            if (list.get(i) == list.get(i - 1)) {
+                b = list.get(i);
             }
         }
-        for (int i = min; i < bol.length; i++) {
-            if (bol[i] == false) {
-                m = i;
-                break;
-            }
-        }
-        System.out.println(m + " " + n);
-
-        // 在C语言网（dotcpp）上通过 内存215528, 耗时256
+        System.out.println(a + " " + b);
     }
 }
 
