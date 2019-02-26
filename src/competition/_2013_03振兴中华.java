@@ -12,7 +12,7 @@ package competition;
     比赛时，先站在左上角的写着“从”字的格子里，可以横向或纵向跳到相邻的格子里，但不能跳到对角的格子或其它位置。一直要跳到“华”字结束。
     要求跳过的路线刚好构成“从我做起振兴中华”这句话。
  */
-public class Four_China {
+public class _2013_03振兴中华 {
     public static void main(String[] args) {
         String[][] m = {
                 {"从", "我", "做", "起", "振"},
