@@ -30,7 +30,7 @@ import java.util.Scanner;
     就是答案
 
  */
-public class Four_Number_Of_Consecutive_Intervals {
+public class _2013_10连号区间数 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
