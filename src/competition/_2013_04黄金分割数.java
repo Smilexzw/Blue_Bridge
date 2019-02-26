@@ -24,7 +24,7 @@ import java.math.BigDecimal;
    （注意尾部的0，不能忽略）
 你的任务是：写出精确到小数点后100位精度的黄金分割值。
  */
-public class Four_Golden_Section_Number {
+public class _2013_04黄金分割数 {
     public static void main(String[] args) {
         /*
            这是一道找规律的题目，由上提示可以推出
@@ -41,7 +41,7 @@ public class Four_Golden_Section_Number {
         BigDecimal b = new BigDecimal("2");
         BigDecimal result = null;
         BigDecimal tmp;
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 1000; i++) {
             tmp = a;
             a = b;
             b = tmp.add(b);
