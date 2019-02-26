@@ -41,7 +41,7 @@ import java.util.Scanner;
     注意：不要使用package语句。不要使用jdk1.6及以上版本的特性。
     注意：主类的名字必须是：Main，否则按无效代码处理。
  */
-public class Four_LuckyNumber {
+public class _2013_08幸运数 {
     public static void main(String[] args) {
 //         先看看的暴力破解可以解决嘛？
 
