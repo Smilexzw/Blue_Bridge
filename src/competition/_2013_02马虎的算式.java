@@ -15,7 +15,7 @@ package competition;
 满足乘法交换律的算式计为不同的种类，所以答案肯定是个偶数。
 
  */
-public class Four_Sloppy_Formula {
+public class _2013_02马虎的算式 {
 //    public static void main(String[] args) {
 //        // 直接暴力破解
 //        int tmp = 0;
