@@ -10,7 +10,7 @@ package competition;
  *
  * gcd 使用的方法欧几里得算法 ，是求两个数字之间的最大公约数
  */
-public class Four_Rational_Number {
+public class _2013_05有理数 {
     public static void main(String[] args) {
         Rational a = new Rational(4, 7);
         Rational b = new Rational(1, 6);
