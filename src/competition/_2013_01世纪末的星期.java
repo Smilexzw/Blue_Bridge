@@ -13,7 +13,7 @@ import java.util.Calendar;
     请回答该年份（只写这个4位整数，不要写12月31等多余信息
  *
  */
-public class Four_TheEndOfWorld {
+public class _2013_01世纪末的星期 {
     public static void main(String[] args) {
         Calendar calendar = Calendar.getInstance();
         for (int i = 1999; ; i += 100) {
