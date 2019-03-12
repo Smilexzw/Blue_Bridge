@@ -46,7 +46,7 @@ public class _2015_10上帝之树 {
 
     private static int n;
     private static long[] w;      // 每一个结点的权重
-    private static List<Integer>[] g;
+    private static List<Integer>[] g;  // 使用list数组来存放邻接结点
     private static long ans = -1;
 
     public static void main(String[] args) {
